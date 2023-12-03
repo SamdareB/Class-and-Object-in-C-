@@ -1,0 +1,47 @@
+/*
+Class and Object In C++
+Class in c++ is Building block of Object oriented Programming, it is user defined data type
+which holds data member and member function which can accessed and used by creating instance of that class
+
+-class is the blue print for an object.
+
+-Object is instance of class, when class is created no memory is alocated when intance(Object)
+of that class created then memery alocated
+
+-syntax for class:
+
+class class_Name{
+	//Access specifier(Public, private, protected).
+	//Data member.
+	//Member function.
+	
+};
+
+-syntax for Object:
+
+class_name Object_name
+
+-Data member and member function of class can be accessed using dot(.) operator along with Object
+
+
+*/
+//Implimentation of class and Object.
+
+#include<iostream>
+using namespace std;
+
+class base{
+	public:
+	int a;
+	int b;
+	base(){
+		a = 5;
+		b = 10;
+	}
+};
+int main(){
+	base object;
+	cout<<object.a<<endl;
+	cout<<object.b<<endl;
+	return 0;
+}
